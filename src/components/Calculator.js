@@ -1,3 +1,5 @@
+import Results from './Results';
+
 function Calc() {
   return (
     <div className="calculator">
@@ -36,9 +38,5 @@ function Calc() {
     </div>
   );
 }
-
-const Results = () => (
-  <span className="results-display">0</span>
-);
 
 export default Calc;
