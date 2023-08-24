@@ -39,14 +39,14 @@
 }
 
 .button-rows li {
-  border: 0.3px solid #757474;
+  border: 0.3px solid #cecece;
   padding: 1rem;
   width: calc(25% - 0.5rem);
   background-color: #eee8e8;
 }
 
 .button-rows li:last-child {
-  background-color: darkorange;
+  background-color: rgb(238, 163, 72);
 }
 
 .last-button-rows {
