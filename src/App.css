@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
 .calculator-grid {
   display: grid;
   margin-top: 2rem;
@@ -16,4 +22,28 @@
   flex-direction: column;
   align-items: flex-end;
   background-color: rgb(107, 112, 112);
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 1rem;
+}
+
+.output .previous-operand {
+  font-size: 1.8rem;
+  color: aliceblue;
+}
+
+.output .current-operand {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.operator {
+  background-color: chocolate;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 800;
 }

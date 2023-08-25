@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Results = ({ previousOperand, currentOperand }) => (
   <div className="output">
@@ -8,9 +8,9 @@ const Results = ({ previousOperand, currentOperand }) => (
   </div>
 );
 
-/* Results.propTypes = {
+Results.propTypes = {
   previousOperand: PropTypes.string.isRequired,
   currentOperand: PropTypes.string.isRequired,
-}; */
+};
 
 export default Results;
