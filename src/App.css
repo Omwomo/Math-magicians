@@ -1,59 +1,49 @@
-.App {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.calculator {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 40%;
-  padding-top: 10%;
-}
-
-.results-display {
-  width: auto;
-  border: 0.3px solid #757474;
-  height: 7vh;
-  background-color: #757474;
-  color: #fff;
-  align-items: center;
-  text-align: right;
-  font-size: 1.5rem;
-  padding-right: 1%;
-}
-
-.buttons {
-  width: 100%;
+body {
   margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
 }
 
-.button-rows {
+.calculator-grid {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  justify-content: center;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
   display: flex;
-  list-style: none;
-  margin: 0 !important;
-  width: 100%;
-  padding: 0;
-}
-
-.button-rows li {
-  border: 0.3px solid #cecece;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgb(107, 112, 112);
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
   padding: 1rem;
-  width: calc(25% - 0.5rem);
-  background-color: #eee8e8;
 }
 
-.button-rows li:last-child {
-  background-color: rgb(238, 163, 72);
+.output .previous-operand {
+  font-size: 1.8rem;
+  color: aliceblue;
 }
 
-.last-button-rows {
-  width: 100% !important;
+.output .current-operand {
+  font-size: 2.8rem;
+  color: #fff;
 }
 
-.zero {
-  width: 55% !important;
+.operator {
+  background-color: chocolate;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 800;
 }
