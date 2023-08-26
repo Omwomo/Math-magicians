@@ -52,7 +52,7 @@ export default function DisplayQuotes() {
                 {' '}
                 {item.author}
               </span>
-              <button key={`button-${item.id}`} onClick={fetchQuotes} type="button" className="qoute-button">Quote Button</button>
+              <button key={`button-${item.id}`} onClick={fetchQuotes} type="button" className="qoute-button">NEW QUOTE</button>
 
             </>
           ))}

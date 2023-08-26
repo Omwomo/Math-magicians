@@ -66,4 +66,5 @@ button {
 .quotes button {
   width: fit-content;
   margin-left: 40%;
+  background-color: chocolate;
 }
