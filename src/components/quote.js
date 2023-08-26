@@ -40,4 +40,20 @@ export default function DisplayQuotes() {
       </p>
     );
   }
+
+  return (
+    <ul className="quotes">
+      {newQuote.map((item) => (
+        <>
+          <li className="quote" key={item.id}>
+            {item.quote}
+            {' '}
+            {item.author}
+          </li>
+          <button key={`button-${item.id}`} onClick={fetchQuotes} type="button" className="qoute-button">Quote Button</button>
+
+        </>
+      ))}
+    </ul>
+  );
 }
