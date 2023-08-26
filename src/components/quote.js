@@ -42,18 +42,22 @@ export default function DisplayQuotes() {
   }
 
   return (
-    <ul className="quotes">
-      {newQuote.map((item) => (
-        <>
-          <li className="quote" key={item.id}>
-            {item.quote}
-            {' '}
-            {item.author}
-          </li>
-          <button key={`button-${item.id}`} onClick={fetchQuotes} type="button" className="qoute-button">Quote Button</button>
+    <>
+      <div className="qoute-area">
+        <div className="quotes">
+          {newQuote.map((item) => (
+            <>
+              <span className="quote" key={item.id}>
+                {item.quote}
+                {' '}
+                {item.author}
+              </span>
+              <button key={`button-${item.id}`} onClick={fetchQuotes} type="button" className="qoute-button">Quote Button</button>
 
-        </>
-      ))}
-    </ul>
+            </>
+          ))}
+        </div>
+      </div>
+    </>
   );
 }

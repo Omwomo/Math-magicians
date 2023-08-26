@@ -6,6 +6,7 @@ body {
 
 .App {
   display: flex;
+  padding-left: 10%;
 }
 
 .calculator-grid {
@@ -52,7 +53,17 @@ button {
   font-weight: 800;
 }
 
-.qoute {
-  display: block;
-  color: #000 !important;
+.qoute-area {
+  padding: 6rem 2rem 2rem 2rem;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.quotes button {
+  width: fit-content;
+  margin-left: 40%;
 }
