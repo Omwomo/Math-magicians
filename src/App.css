@@ -8,6 +8,7 @@ body {
 .App {
   display: flex;
   padding-left: 10%;
+  height: 100%;
 }
 
 .calculator-grid {
@@ -71,4 +72,12 @@ button {
   width: fit-content;
   margin-left: 40%;
   background-color: chocolate;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.quotes .author {
+  font-size: 3rem;
+  color: cadetblue
 }
