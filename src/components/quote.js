@@ -49,9 +49,8 @@ export default function DisplayQuotes() {
             <>
               <span className="quote" key={item.id}>
                 {item.quote}
-                {' '}
-                {item.author}
               </span>
+              <span className="author">{item.author}</span>
               <button key={`button-${item.id}`} onClick={fetchQuotes} type="button" className="qoute-button">NEW QUOTE</button>
 
             </>

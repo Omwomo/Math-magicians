@@ -62,7 +62,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
   text-align: center;
 }
