@@ -2,13 +2,14 @@ body {
   margin: 0;
   font-size: 1rem;
   font-weight: 800;
-  background: linear-gradient(rgb(6, 6, 46), rgb(63, 11, 11));
+
+  /* background: linear-gradient(rgb(6, 6, 46), rgb(63, 11, 11)); */
+  height: 100%;
 }
 
 .App {
   display: flex;
-  padding-left: 10%;
-  height: 100%;
+  flex-direction: column;
 }
 
 .calculator-grid {
@@ -64,7 +65,7 @@ button {
   flex-direction: column;
   gap: 2rem;
   font-size: 2rem;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 
@@ -79,5 +80,45 @@ button {
 
 .quotes .author {
   font-size: 3rem;
-  color: cadetblue
+  color: cadetblue;
+}
+
+.navbar {
+  display: flex;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: sticky;
+  height: 5rem;
+  z-index: 9999;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 1rem 0.5rem;
+}
+
+.logo {
+  padding: 1rem 1rem;
+  font-size: 3.3rem;
+}
+
+.home-page {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.home-page .intro {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.home-page h2 {
+  font-size: 3rem;
 }
