@@ -1,20 +1,20 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import DisplayQuotes from './components/quote';
+import Navigation from './components/Navigation';
+import HomePage from './components/Home';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <switch>
-          <Route path="/Calculator">
-            <Calculator />
-          </Route>
-          <Route path="/quote">
-            <DisplayQuotes />
-          </Route>
-        </switch>
+        <Navigation />
+        <Routes>
+          <Route path="/Home" element={<HomePage />} />
+          <Route path="/Calculator" element={<Calculator />} />
+          <Route path="/quote" element={<DisplayQuotes />} />
+        </Routes>
       </div>
     </Router>
   );
