@@ -2,13 +2,22 @@ body {
   margin: 0;
   font-size: 1rem;
   font-weight: 800;
-  background: linear-gradient(rgb(6, 6, 46), rgb(63, 11, 11));
+  height: 100%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .App {
   display: flex;
-  padding-left: 10%;
-  height: 100%;
+  flex-direction: column;
+}
+
+.calculator {
+  display: flex;
+}
+
+.do-math {
+  font-size: 2rem;
+  padding: 4rem 6rem 1rem 4rem;
 }
 
 .calculator-grid {
@@ -17,6 +26,8 @@ body {
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
   justify-content: center;
+  margin-left: auto;
+  margin-right: 20%;
 }
 
 .span-two {
@@ -64,7 +75,7 @@ button {
   flex-direction: column;
   gap: 2rem;
   font-size: 2rem;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 
@@ -79,5 +90,46 @@ button {
 
 .quotes .author {
   font-size: 3rem;
-  color: cadetblue
+  color: cadetblue;
+}
+
+.navbar {
+  display: flex;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: sticky;
+  height: 5rem;
+  z-index: 9999;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 1rem 0.5rem;
+}
+
+.logo {
+  padding: 1rem 1rem;
+  font-size: 3.3rem;
+}
+
+.home-page {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.home-page .intro {
+  padding: 0.1% 10% 0.1% 10%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.home-page h2 {
+  font-size: 2.5rem;
+  text-align: center;
 }
