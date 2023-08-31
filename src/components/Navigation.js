@@ -8,7 +8,7 @@ function Navigation() {
         Math Magicians
       </div>
       <ul className="nav-links">
-        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/calculator">Calculator</Link></li>
         <li><Link to="/quote">Quotes</Link></li>
       </ul>
